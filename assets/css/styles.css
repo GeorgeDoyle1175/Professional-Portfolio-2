@@ -2,6 +2,8 @@ body {
     background-color: grey;
   }
 
+  /* Header and Navigation Style */
+
   header {
       position: fixed;
       top: 0;
@@ -14,32 +16,6 @@ body {
       background-color: #13293d;
       color: #fff;
       z-index: 1;
-    }
-
-    .about-me {
-      margin-top: 150px;
-    }
-
-    .about-me-container {
-      position: relative;
-      display: flex;
-    }
-
-    hr {
-      border: 0;
-      border-top: px dashed black;
-      clear: both;
-      margin: 1em;
-    }
-
-    h1 {
-      font-size: 200%;
-    }
-
-    h2 {
-      display: inline-block;
-      margin: 2% 0;
-      font-size: 250%;
     }
 
     nav ul {
@@ -58,6 +34,43 @@ body {
       color: #fff;
     }
 
+/* About Me Container and Spacing */
+    .about-me {
+      margin-top: 150px;
+    }
+
+    .about-me-container {
+      position: relative;
+      display: flex;
+    }
+
+/*Page Break between Sections*/
+    hr {
+      border: 0;
+      border-top: px dashed black;
+      clear: both;
+      margin: 1em;
+    }
+
+/* Header Font */
+    h1 {
+      font-size: 200%;
+      margin-top: 0;
+    }
+
+    h2 {
+      display: inline-block;
+      margin: 2% 0;
+      font-size: 250%;
+    }
+
+    h4 {
+      justify-content: left;
+      padding: 10px;
+    }
+
+  /* Headshot */
+
   .headshot_img {
     width: 240px;
     height: 360;
@@ -74,25 +87,18 @@ body {
 
   }
 
-
   .section1{
     display: flex;
     position: relative;
     margin-left: 20px;
   }
 
-  h1 {
-    margin-top: 0;
-  }
-
-  h4 {
-    justify-content: left;
-    padding: 10px;
-  }
 
   p {
     margin-bottom: 5px;
   }
+
+  /* Animation for Project Boxes*/
 
   .animate-on-hover {
     transition: all 0.5s ease;
@@ -102,6 +108,41 @@ body {
     transition: all 0.5s ease;
   }
 
+  .first-box {
+    /* Set the width and height of the box */
+    height: 250px;
+    margin: 5px;
+    flex: 1;
+
+    /* Add a transition effect for the hover state */
+    transition: background-color 0.5s ease;
+  }
+
+.box {
+  /* Set the width and height of the box */
+  height: 100px;
+  width: 250px;
+  margin: 5px;
+
+  /* Add a transition effect for the hover state */
+  transition: background-color 0.5s ease;
+}
+.box:hover {
+  /* Set the background color to highlight the image when hovering */
+  background-color: rgba(27, 60, 117, 0.5);
+}
+
+.first-box:hover {
+  /* Set the background color to highlight the image when hovering */
+  background-color: rgba(27, 60, 117, 0.5);
+}
+.caption-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #13293d;
+  color: #fff;
+}
 
   .project {
     border: 1px solid #ccc;
@@ -147,6 +188,8 @@ body {
   width: 360px;
   flex-direction: column;
 }
+
+/*Adjustment for screen sizes*/
 
   @media (max-width: 600px) {
     body {
@@ -208,41 +251,7 @@ body {
 
   }
 
-  .first-box {
-    /* Set the width and height of the box */
-    height: 250px;
-    margin: 5px;
-    flex: 1;
 
-    /* Add a transition effect for the hover state */
-    transition: background-color 0.5s ease;
-  }
-
-.box {
-  /* Set the width and height of the box */
-  height: 100px;
-  width: 250px;
-  margin: 5px;
-
-  /* Add a transition effect for the hover state */
-  transition: background-color 0.5s ease;
-}
-.box:hover {
-  /* Set the background color to highlight the image when hovering */
-  background-color: rgba(27, 60, 117, 0.5);
-}
-
-.first-box:hover {
-  /* Set the background color to highlight the image when hovering */
-  background-color: rgba(27, 60, 117, 0.5);
-}
-.caption-box {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #13293d;
-  color: #fff;
-}
 
 .icons {
   height:40px;
