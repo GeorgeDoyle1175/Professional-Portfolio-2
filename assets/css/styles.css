@@ -1,0 +1,250 @@
+body {
+    background-color: grey;
+  }
+
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1%;
+      background-color: #13293d;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .about-me {
+      margin-top: 150px;
+    }
+
+    .about-me-container {
+      position: relative;
+      display: flex;
+    }
+
+    hr {
+      border: 0;
+      border-top: px dashed black;
+      clear: both;
+      margin: 1em;
+    }
+
+    h1 {
+      font-size: 200%;
+    }
+
+    h2 {
+      display: inline-block;
+      margin: 2% 0;
+      font-size: 250%;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      min-width: 200px;
+    }
+
+    nav a {
+      color: #b9c6ae;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+  .headshot_img {
+    width: 240px;
+    height: 360;
+    border: 3px solid black;
+    margin-right: 17px;
+    margin-left: 20px;
+
+  }
+
+  .challenge1_img {
+    width: 240px;
+    border: 3px solid black;
+    margin-right: 17px;
+
+  }
+
+
+  .section1{
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  h4 {
+    justify-content: left;
+    padding: 10px;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  .animate-on-hover {
+    transition: all 0.5s ease;
+  }
+  .animate-on-hover:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
+
+
+  .project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #13293d;
+    color: #fff;
+  }
+
+  .project1_img{
+    background-image: url("../images/Horiseon.png");
+    background-size: 100%;
+    object-fit: cover;
+  }
+
+  .project2_img{
+    background-image: url("../images/jupiter.jpeg");
+    background-size: 100%;
+    object-fit: cover;
+  }
+
+  .project3_img{
+    background-image: url("../images/Earth.jpeg");
+    background-size: 100%;
+    object-fit: cover;
+  }
+
+  .project4_img{
+    background-image: url("../images/rocket-launch.jpeg");
+    background-size: 100%;
+    object-fit: cover;
+  }
+
+
+  .project-1-wrapper {
+    display:flex;
+    flex-direction: column;
+    width: 60vw;
+  }
+
+.smaller-projects {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+}
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 12px;
+    }
+    .project {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) {
+    body {
+      font-size: 14px;
+    }
+    .project {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 901px) {
+    body {
+      font-size: 16px;
+    }
+    .project {
+      width: 85%;
+    }
+  }
+
+/* Footer Details*/
+
+  .social-media-icons {
+    justify-content: center;
+    border-radius: 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:20px;
+  }
+
+  .email {
+    display: flex;
+    margin: 20px;
+  }
+
+  footer {
+    background-color: #13293d;
+    color: #fff;
+    bottom:0;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer>*{
+    flex:1;
+
+  }
+
+  .first-box {
+    /* Set the width and height of the box */
+    height: 250px;
+    margin: 5px;
+    flex: 1;
+
+    /* Add a transition effect for the hover state */
+    transition: background-color 0.5s ease;
+  }
+
+.box {
+  /* Set the width and height of the box */
+  height: 100px;
+  width: 250px;
+  margin: 5px;
+
+  /* Add a transition effect for the hover state */
+  transition: background-color 0.5s ease;
+}
+.box:hover {
+  /* Set the background color to highlight the image when hovering */
+  background-color: rgba(27, 60, 117, 0.5);
+}
+
+.first-box:hover {
+  /* Set the background color to highlight the image when hovering */
+  background-color: rgba(27, 60, 117, 0.5);
+}
+.caption-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #13293d;
+  color: #fff;
+}
+
+.icons {
+  height:40px;
+  width:40px;
+}
