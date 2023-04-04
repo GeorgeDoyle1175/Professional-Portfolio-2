@@ -47,8 +47,8 @@
 
         <br>
         <div class ="smaller-projects" >
-            <div class="project box animate-on-hover project2_img">
-                <h3>Project 2</h3>
+          <div class="project box animate-on-hover project2_img" id="sosRecipesDiv">
+                <h3>SOS Recipes</h3>
               </div>
               <div class="project box animate-on-hover project3_img">
                   <h3>Project 3</h3>
@@ -58,6 +58,23 @@
 
                 </div>
         </div>
+
+        <!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Script to add click event to the div -->
+<script>
+    $(document).ready(function() {
+        // Find the div by its id
+        var sosRecipesDiv = $('#sosRecipesDiv');
+
+        // Add click event handler
+        sosRecipesDiv.on('click', function() {
+            // Redirect to sosrecipes.heroku.com
+            window.location.href = 'https://sosrecipes.herokuapp.com';
+        });
+    });
+</script>
 
   </section>
     <hr>
